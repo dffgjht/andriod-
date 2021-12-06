@@ -35,7 +35,7 @@ try:
 except:
     print('账号登陆失败')
 
-yy=['']
+yy=['']#输入应用名称，半角逗号分开
 xx=[]
 for y in yy:
     try:
