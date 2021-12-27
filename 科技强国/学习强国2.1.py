@@ -5,13 +5,13 @@ import win32api
 import random
 import re
 try:
-  win32api.ShellExecute(0,'open',r'D:\Program Files\Microvirt\MEmu\MEmu.exe','','',1)
+  win32api.ShellExecute(0,'open',r'D:\Program Files\Microvirt\MEmu\MEmu.exe','','',1)#逍遥模拟器安装地址
   time.sleep(30)
 except:
   pass
 while 1:
     try:
-        d = u2.connect('127.0.0.1:21503')
+        d = u2.connect('127.0.0.1:21503')#逍遥模拟器对应端口号，多开后面端口号相应增加，如第二个为21513，第三个21523
         print(d.info)
         d.unlock()
         break
